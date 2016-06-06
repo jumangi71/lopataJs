@@ -1,0 +1,11 @@
+{
+  "name": "lopataJs",
+  "version": "0.0.1",
+  "description": "== README",
+  "author": "Rambler",
+  "license": "ISC",
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}
