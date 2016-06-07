@@ -5,7 +5,7 @@
   "author": "Rambler",
   "license": "ISC",
   "devDependencies": {
+    "eslint-config-rambler": "0.2.2"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

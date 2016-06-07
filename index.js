@@ -1,4 +1,4 @@
-let lopata = {
+module.exports = {
   getCookie(name) {
     let matches = document.cookie.match(new RegExp(
       '(?:^|; )' + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + '=([^;]*)'
@@ -99,7 +99,7 @@ let lopata = {
     xhr.onreadystatechange = () => {
       // TODO: check data type!
       if (xhr.readyState === 4 && xhr.status === 200) {
-        //TODO: make cross browser implementation
+        // TODO: make cross browser implementation
         let response = document.implementation.createHTMLDocument('');
         response.body.innerHTML = xhr.responseText;
         if (typeof success === 'function') success(response);
@@ -118,6 +118,5 @@ let lopata = {
     script.src = url + (url.indexOf('?') >= 0 ? '&' : '?') + 'callback=' + callbackName;
     document.body.appendChild(script);
   }
-};
 
-module.exports = lopata;
+};
